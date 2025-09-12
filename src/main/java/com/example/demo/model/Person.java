@@ -16,16 +16,19 @@ public class Person {
 
     private String name;
     private String email;
-    
+    private int edad;
+
 
     // Constructor vacío (obligatorio para JPA)
     public Person() {}
 
     // Constructor con parámetros
-    public Person(Long id, String name, String email) {
+    public Person(Long id, String name, String email, int edad) {
         this.id = id;
         this.name = name;
         this.email = email;
+        this.edad = edad;
+
     }
 
     // Getters y Setters
@@ -49,4 +52,12 @@ public class Person {
     public void setEmail(String email) { 
         this.email = email; 
     }
+    public int getEdad(){
+        return edad;
+    }
+    public void setEdad(int edad){
+        this.edad = edad;
+    }
+
+
 }
