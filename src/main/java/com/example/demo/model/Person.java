@@ -17,6 +17,7 @@ public class Person {
     private String name;
     private String email;
     private int edad;
+    
 
 
     // Constructor vacío (obligatorio para JPA)
